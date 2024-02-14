@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-amber-50 font-sans">
+    <section class="h-screen md:h-fit">
+      <div class="main m-5 md:mx-28">
+        <header>
+          <nav class="flex justify-between items-center">
+            <div class="logo flex gap-4 text-3xl font-medium items-center">
+              <img src="../assets/img/logo.svg" alt="" class="h-8" />
+              <h1 class="md:text-xl">dwelling</h1>
+            </div>
+            <div
+              id="hamBurgerMenu"
+              class="md:hidden flex flex-col gap-1 float-right md:justify-between md:items-center cursor-pointer"
+              onclick="toggleMobileMenu()"
+            >
+              <div class="hamBurger w-5 h-1 bg-black"></div>
+              <div class="hamBurger w-5 h-1 bg-black"></div>
+              <div class="hamBurger w-5 h-1 bg-black"></div>
+            </div>
+            <div id="menuList" class="hidden md:flex md:flex-row items-center">
+              <ul class="md:flex gap-10">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Renter</li>
+                <li>Homeowners</li>
+                <li>Reviews</li>
+              </ul>
+            </div>
+            <div id="register-btn" class="ml-4 md:inline hidden">
+              <button class="bg-orange-600 text-white px-5 py-2 rounded">
+                Register
+              </button>
+            </div>
+          </nav>
+        </header>
+        <div id="mainIntro">
+          <div id="introImg" class="flex gap-2 my-7 justify-between md:gap-5">
+            <img src="../assets/img/main-page-img/img-1.svg" alt="" class="w-1/4 md:w-1/5" />
+            <img src="../assets/img/main-page-img/img-2.svg" alt="" class="w-1/4 pt-10 md:w-1/5"/>
+            <img src="../assets/img/main-page-img/img-3.svg" alt="" class="w-1/4 md:w-1/5" />
+            <img src="../assets/img/main-page-img/img-4.svg" alt="" class="w-1/4 pt-10 md:w-1/5"/>
+          </div>
+          <div class="heading max-w-6xl">
+            <h1 class="md:text-9xl text-4xl font-bold my-2 md:py-4">Home is where your story begins</h1>
+            <p>Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.</p>
+          </div>
+          <div id="searchScroll" class="md:flex justify-between items-center my-2">
+          <div id="searchBox" class="bg-white p-7 md:flex gap-2 md:w-fit  rounded-xl">
+            <div id="s1" class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3">
+            <input type="text" placeholder="Where are you moving?" class="h-12">
+            <img src="../assets/icons/search.svg" alt="" class="">
+          </div>
+          <div id="s2" class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3">
+            <input type="text" placeholder="Where type of home?" class="h-12 ">
+            <img src="../assets/icons/down-arrow.svg" alt="" class="">
+          </div>
+          <button class="my-3 bg-orange-600 flex gap-3 justify-between items-center px-3 font-semibold rounded-xl text-white h-12">Find a home <img src="../assets/icons/left-arrow.svg" alt=""></button>
+          </div>
+          <div id="mouse" class="flex flex-col  relative" >
+            <img src="../assets/icons/mouse.svg" alt="" class="absolute">
+          <p>Scroll Down</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="work-info" class="bg-violet-600">
+      <div id="info-parent" class="mx-5 md:py-20 pb-7 md:mx-28 text-gray-200 flex flex-col gap-10">
+        <div id="text-parent" class="md:grid md:grid-cols-2 gap-4 items-center">
+        <div id="trusted"> 
+          <h1 class="text-2xl md:text-7xl pt-14 font-bold text-white">Trusted by the people across the globe</h1>
+        </div>
+        <div id="trusted-text">
+        <p>Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.</p>
+        <p>No matter what stage of life you’re in, having friends to share experiences with is what it’s all about.</p>
+      </div>
+      </div>
+        <div id="emojiSection" class="">
+          <div id="emoji" class="flex flex-col gap-5 md:flex-row md:justify-around">
+          <div id="shocked" class="flex gap-5 items-start md:items-center">
+            <img src="../assets/icons/shocked.svg" alt="">
+            <div id="shockedInfo">
+              <h1 class="font-bold text-4xl">+20K</h1>
+              <p>Clients worldwide</p>
+            </div>
+          </div>
+          <div id="loved" class="flex gap-5 items-start md:items-center">
+            <img src="../assets/icons/loved.svg" alt="">
+            <div id="lovedInfo">
+              <h1 class="font-bold text-4xl">95.7%</h1>
+              <p>Satisfied Clients</p>
+            </div>
+          </div>
+          <div id="happy" class="flex gap-5 items-start md:items-center">
+            <img src="../assets/icons/happy.svg" alt="">
+            <div id="happyInfo">
+              <h1 class="font-bold text-4xl">100</h1>
+              <p>City around</p>
+            </div>
+          </div>
+        </div>
+        <div id="empty"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="bg-white h-screen">
+      <div id="solution-parent" class="mx-5 py-20 md:mx-28">
+      <div id="solutionInfo" class="grid md:grid-cols-2 gap-10  ">
+        <div id="imgCard" class="relative">
+          <img src="../assets/img/chairHome.svg" alt="" class="w-9/12">
+          <div id="profileCard" class="bg-white h-2/3 w-1/2 absolute right-0 bottom-4 rounded-lg shadow grid justify-center p-4 ">
+            <div id="imgCircle" class="relative grid justify-center pb-4">
+            <img src="../assets/img/profilePic.svg" alt="" class="h-full">
+            <div id="greenDot" class="absolute left-16 top-10 md:top-24 md:left-20 h-6 w-6 md:h-10 md:w-10 bg-green-700 rounded-full border">
+            </div>
+          </div>
+          <div class="grid justify-center">
+            <h1 class="font-bold text-xl">David Warner</h1>
+              <p>Property Agent</p>
+            <button id="msgBtn" class="bg-violet-600 rounded text-white ">
+              Messages
+            </button>
+          </div>
+         
+          </div>
+        </div>
+        <div id="solutionText" class="grid gap-10 md:gap-7">
+          <h1 class="text-3xl md:text-5xl font-bold">Providing the effective solutions for you</h1>
+          <p class="md:text-xl">Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.
+          </p>
+          <button class="bg-orange-600 p-5 rounded-xl text-white font-bold w-max md:h-fit">More About Us</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="porperty" class="bg-violet-600 h-screen">
+      <div id="property-parent">
+        
+      </div>
+    </section>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
