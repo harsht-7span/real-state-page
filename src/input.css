@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .custom-container {
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+}

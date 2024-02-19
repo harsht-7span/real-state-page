@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="bg-amber-50 font-sans">
-    <section class="h-screen md:h-fit">
-      <div class="main m-5 md:mx-28">
+    <section id="hero-section" class="h-fit md:h-fit">
+      <div class="main mx-5 my-5 md:my-9 md:custom-container">
         <header>
           <nav class="flex justify-between items-center">
             <div class="logo flex gap-4 text-3xl font-medium items-center">
@@ -18,7 +18,6 @@
             <div
               id="hamBurgerMenu"
               class="md:hidden flex flex-col gap-1 float-right md:justify-between md:items-center cursor-pointer"
-              onclick="toggleMobileMenu()"
             >
               <div class="hamBurger w-5 h-1 bg-black"></div>
               <div class="hamBurger w-5 h-1 bg-black"></div>
@@ -26,8 +25,8 @@
             </div>
             <div id="menuList" class="hidden md:flex md:flex-row items-center">
               <ul class="md:flex gap-10">
-                <li>Home</li>
-                <li>About us</li>
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#work-info">About us</a></li>
                 <li>Renter</li>
                 <li>Homeowners</li>
                 <li>Reviews</li>
@@ -41,114 +40,511 @@
           </nav>
         </header>
         <div id="mainIntro">
-          <div id="introImg" class="flex gap-2 my-7 justify-between md:gap-5">
-            <img src="../assets/img/main-page-img/img-1.svg" alt="" class="w-1/4 md:w-1/5" />
-            <img src="../assets/img/main-page-img/img-2.svg" alt="" class="w-1/4 pt-10 md:w-1/5"/>
-            <img src="../assets/img/main-page-img/img-3.svg" alt="" class="w-1/4 md:w-1/5" />
-            <img src="../assets/img/main-page-img/img-4.svg" alt="" class="w-1/4 pt-10 md:w-1/5"/>
+          <div
+            id="introImg"
+            class="flex gap-2 my-7 w-full items-center justify-between md:gap-5"
+          >
+            <div
+              id="landingImg"
+              class="bg-none rounded-lg w-[20%] overflow-hidden"
+            >
+              <img
+                src="../assets/img/property.svg"
+                alt=""
+                class="w-full rounded"
+              />
+            </div>
+
+            <div
+              id="landingImg"
+              class="bg-none rounded-lg w-[20%] overflow-hidden"
+            >
+              <img
+                src="../assets/img/property.svg"
+                alt=""
+                class="pt-12 object-cover w-full"
+              />
+            </div>
+            <div
+              id="landingImg"
+              class="bg-none rounded-lg w-[20%] overflow-hidden"
+            >
+              <img
+                src="../assets/img/smallchair.svg"
+                alt=""
+                class="object-cover w-full"
+              />
+            </div>
+            <div
+              id="landingImg"
+              class="bg-none rounded-lg w-[20%] overflow-hidden"
+            >
+              <img
+                src="../assets/img/property.svg"
+                alt=""
+                class="pt-12 object-cover w-full"
+              />
+            </div>
           </div>
           <div class="heading max-w-6xl">
-            <h1 class="md:text-9xl text-4xl font-bold my-2 md:py-4">Home is where your story begins</h1>
-            <p>Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.</p>
+            <h1 class="md:text-9xl text-4xl font-bold my-2 md:py-4">
+              Home is where your story begins
+            </h1>
+            <p>
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents. Live the way you want. Beautiful
+              homes. Incredible locations. Pricing that makes sense.
+            </p>
           </div>
-          <div id="searchScroll" class="md:flex justify-between items-center my-2">
-          <div id="searchBox" class="bg-white p-7 md:flex gap-2 md:w-fit  rounded-xl">
-            <div id="s1" class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3">
-            <input type="text" placeholder="Where are you moving?" class="h-12">
-            <img src="../assets/icons/search.svg" alt="" class="">
+          <div
+            id="searchScroll"
+            class="md:flex justify-between items-center my-2"
+          >
+            <div
+              id="searchBox"
+              class="bg-white p-7 md:flex gap-2 md:w-fit rounded-xl"
+            >
+              <div
+                id="s1"
+                class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3"
+              >
+                <input
+                  type="text"
+                  placeholder="Where are you moving?"
+                  class="h-12"
+                />
+                <img src="../assets/icons/search.svg" alt="" class="" />
+              </div>
+              <div
+                id="s2"
+                class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3"
+              >
+                <input
+                  type="text"
+                  placeholder="Where type of home?"
+                  class="h-12"
+                />
+                <img src="../assets/icons/down-arrow.svg" alt="" class="" />
+              </div>
+              <button
+                class="my-3 bg-orange-600 flex gap-3 justify-between items-center px-3 font-semibold rounded text-white h-12"
+              >
+                Find a home <img src="../assets/icons/left-arrow.svg" alt="" />
+              </button>
+            </div>
+            <div id="mouse" class="flex flex-col items-center">
+              <div>
+                <img src="../assets/icons/mouse.svg" alt="" class="" />
+              </div>
+              <div>
+                <p>Scroll Down</p>
+              </div>
+            </div>
           </div>
-          <div id="s2" class="my-3 border-2 border-gray-300 flex justify-between rounded-xl px-3">
-            <input type="text" placeholder="Where type of home?" class="h-12 ">
-            <img src="../assets/icons/down-arrow.svg" alt="" class="">
-          </div>
-          <button class="my-3 bg-orange-600 flex gap-3 justify-between items-center px-3 font-semibold rounded-xl text-white h-12">Find a home <img src="../assets/icons/left-arrow.svg" alt=""></button>
-          </div>
-          <div id="mouse" class="flex flex-col  relative" >
-            <img src="../assets/icons/mouse.svg" alt="" class="absolute">
-          <p>Scroll Down</p>
-          </div>
-        </div>
         </div>
       </div>
-    </div>
     </section>
 
     <section id="work-info" class="bg-violet-600">
-      <div id="info-parent" class="mx-5 md:py-20 pb-7 md:mx-28 text-gray-200 flex flex-col gap-10">
+      <div
+        id="info-parent"
+        class="mx-5 md:py-20 pb-7 md:mx-28 text-gray-200 flex flex-col gap-10"
+      >
         <div id="text-parent" class="md:grid md:grid-cols-2 gap-4 items-center">
-        <div id="trusted"> 
-          <h1 class="text-2xl md:text-7xl pt-14 font-bold text-white">Trusted by the people across the globe</h1>
+          <div id="trusted">
+            <h1 class="text-2xl md:text-7xl pt-14 font-bold text-white">
+              Trusted by the people across the globe
+            </h1>
+          </div>
+          <div id="trusted-text">
+            <p>
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents. Live the way you want. Beautiful
+              homes. Incredible locations. Pricing that makes sense.
+            </p>
+            <p>
+              No matter what stage of life you’re in, having friends to share
+              experiences with is what it’s all about.
+            </p>
+          </div>
         </div>
-        <div id="trusted-text">
-        <p>Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.</p>
-        <p>No matter what stage of life you’re in, having friends to share experiences with is what it’s all about.</p>
-      </div>
-      </div>
         <div id="emojiSection" class="">
-          <div id="emoji" class="flex flex-col gap-5 md:flex-row md:justify-around">
-          <div id="shocked" class="flex gap-5 items-start md:items-center">
-            <img src="../assets/icons/shocked.svg" alt="">
-            <div id="shockedInfo">
-              <h1 class="font-bold text-4xl">+20K</h1>
-              <p>Clients worldwide</p>
+          <div
+            id="emoji"
+            class="flex flex-col gap-5 md:flex-row md:justify-around"
+          >
+            <div id="shocked" class="flex gap-5 items-start md:items-center">
+              <img src="../assets/icons/shocked.svg" alt="" />
+              <div id="shockedInfo">
+                <h1 class="font-bold text-4xl">+20K</h1>
+                <p>Clients worldwide</p>
+              </div>
+            </div>
+            <div id="loved" class="flex gap-5 items-start md:items-center">
+              <img src="../assets/icons/loved.svg" alt="" />
+              <div id="lovedInfo">
+                <h1 class="font-bold text-4xl">95.7%</h1>
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+            <div id="happy" class="flex gap-5 items-start md:items-center">
+              <img src="../assets/icons/happy.svg" alt="" />
+              <div id="happyInfo">
+                <h1 class="font-bold text-4xl">100</h1>
+                <p>City around</p>
+              </div>
             </div>
           </div>
-          <div id="loved" class="flex gap-5 items-start md:items-center">
-            <img src="../assets/icons/loved.svg" alt="">
-            <div id="lovedInfo">
-              <h1 class="font-bold text-4xl">95.7%</h1>
-              <p>Satisfied Clients</p>
-            </div>
-          </div>
-          <div id="happy" class="flex gap-5 items-start md:items-center">
-            <img src="../assets/icons/happy.svg" alt="">
-            <div id="happyInfo">
-              <h1 class="font-bold text-4xl">100</h1>
-              <p>City around</p>
-            </div>
-          </div>
-        </div>
-        <div id="empty"></div>
+          <div id="empty"></div>
         </div>
       </div>
     </section>
 
-    <section id="solution" class="bg-white h-screen">
+    <section id="solution" class="bg-white">
       <div id="solution-parent" class="mx-5 py-20 md:mx-28">
-      <div id="solutionInfo" class="grid md:grid-cols-2 gap-10  ">
-        <div id="imgCard" class="relative">
-          <img src="../assets/img/chairHome.svg" alt="" class="w-9/12">
-          <div id="profileCard" class="bg-white h-2/3 w-1/2 absolute right-0 bottom-4 rounded-lg shadow grid justify-center p-4 ">
-            <div id="imgCircle" class="relative grid justify-center pb-4">
-            <img src="../assets/img/profilePic.svg" alt="" class="h-full">
-            <div id="greenDot" class="absolute left-16 top-10 md:top-24 md:left-20 h-6 w-6 md:h-10 md:w-10 bg-green-700 rounded-full border">
+        <div id="solutionInfo" class="grid md:grid-cols-2 gap-10">
+          <div id="imgCard" class="relative">
+            <img src="../assets/img/chairHome.svg" alt="" class="w-9/12" />
+            <div
+              id="profileCard"
+              class="bg-white h-2/3 w-1/2 absolute right-0 bottom-4 rounded-lg shadow grid justify-center p-4"
+            >
+              <div id="imgCircle" class="relative grid justify-center pb-4">
+                <img src="../assets/img/profilePic.svg" alt="" class="h-full" />
+                <span
+                  id="greenDot"
+                  class="absolute p-2 right-7 bottom-4 md:p-3 md:bottom-5 md:right-5 bg-green-700 rounded-full border"
+                >
+                </span>
+              </div>
+              <div class="grid justify-center">
+                <h1 class="font-bold text-xl">David Warner</h1>
+                <p>Property Agent</p>
+                <button id="msgBtn" class="bg-violet-600 rounded text-white">
+                  Messages
+                </button>
+              </div>
             </div>
           </div>
-          <div class="grid justify-center">
-            <h1 class="font-bold text-xl">David Warner</h1>
-              <p>Property Agent</p>
-            <button id="msgBtn" class="bg-violet-600 rounded text-white ">
-              Messages
+          <div id="solutionText" class="grid gap-10 md:gap-7">
+            <h1 class="text-3xl md:text-5xl font-bold">
+              Providing the effective solutions for you
+            </h1>
+            <p class="md:text-xl">
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents. Live the way you want. Beautiful
+              homes. Incredible locations. Pricing that makes sense.
+            </p>
+            <button
+              class="bg-orange-600 p-5 rounded-xl text-white font-bold w-max md:h-fit"
+            >
+              More About Us
             </button>
           </div>
-         
-          </div>
-        </div>
-        <div id="solutionText" class="grid gap-10 md:gap-7">
-          <h1 class="text-3xl md:text-5xl font-bold">Providing the effective solutions for you</h1>
-          <p class="md:text-xl">Building a next-generation collaborative platform to connect renters, homeowners, and agents. Live the way you want. Beautiful homes. Incredible locations. Pricing that makes sense.
-          </p>
-          <button class="bg-orange-600 p-5 rounded-xl text-white font-bold w-max md:h-fit">More About Us</button>
         </div>
       </div>
-    </div>
     </section>
 
-    <section id="porperty" class="bg-violet-600 h-screen">
-      <div id="property-parent">
-        
+    <section id="porperty" class="bg-violet-600 pb-28">
+      <div
+        id="property-parent"
+        class="mx-5 pt-12 md:custom-container text-white flex flex-col items-center"
+      >
+        <div class="md:grid grid-cols-3 justify-between items-end">
+          <div></div>
+          <div id="property-intro" class="my-7">
+            <h1 class="text-3xl font-bold my-5">Popular property</h1>
+            <p>
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents.
+            </p>
+          </div>
+          <div id="arrows" class="flex gap-7">
+            <div
+              id="arrow-1"
+              class="h-12 w-12 bg-white rounded-full relative -rotate-45 flex justify-center"
+            >
+              <img
+                src="../assets/icons/up-arrow-svgrepo-com.svg"
+                alt=""
+                class="w-6"
+              />
+            </div>
+
+            <div
+              id="arrow-2"
+              class="h-12 w-12 bg-orange-500 rounded-full relative rotate-45 flex justify-center"
+            >
+              <img
+                src="../assets/icons/up-arrow-svgrepo-com.svg"
+                alt=""
+                class="w-6"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="property-img"
+          class="my-5 md:flex gap-8 justify-between items-end"
+        >
+          <div id="first-img-card" class="bottom-0">
+            <img
+              src="../assets/img/property.svg"
+              alt=""
+              class="h-full w-full md:w-auto md:h-auto"
+            />
+            <div id="price" class="mt-7 flex justify-between">
+              <div id="price-text">
+                <p class="text-black font-bold">
+                  <span class="text-orange-500">$</span>49,143
+                </p>
+                <p class="text-black font-bold">Gulshan duplex house</p>
+              </div>
+              <div
+                id="arrow-3"
+                class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+              >
+                <img
+                  src="../assets/icons/up-arrow-svgrepo-com.svg"
+                  alt=""
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="../assets/img/property.svg"
+              alt=""
+              class="h-full w-full md:w-auto md:h-auto hidden md:block"
+            />
+          </div>
+          <div>
+            <img
+              src="../assets/img/property.svg"
+              alt=""
+              class="h-full w-full md:w-auto md:h-auto hidden md:block"
+            />
+          </div>
+        </div>
+        <div>
+          <button class="bg-orange-500 py-4 px-9 rounded-md">
+            All Property
+          </button>
+        </div>
       </div>
     </section>
+
+    <section id="give">
+      <div
+        id="give-parent"
+        class="mx-5 py-14 flex flex-col gap-7 justify-center items-center md:custom-container"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold">What we give you</h1>
+        <p class="text-center text-lg">
+          Building a next-generation collaborative platform to connect renters,
+          homeowners, and agents.
+        </p>
+        <div
+          id="video"
+          class="w-96 h-48 md:h-[670px] md:w-[1170px] bg-gray-500 flex justify-center items-center rounded"
+        >
+          <video
+            src="#"
+            class="h-full w-full rounded object-cover"
+            controls
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-zinc-900">
+      <div id="client-parent" class="mx-5 py-14 md:custom-container">
+        <div id="client" class="md:grid grid-cols-2 justify-center text-white">
+          <div id="client-h1" class="flex flex-col gap-7">
+            <h1 class="text-3xl md:text-6xl font-bold">What client Say</h1>
+            <div id="slider" class="flex gap-3">
+              <div
+                id="slider1"
+                class="w-6 h-2 border-2 border-white rounded"
+              ></div>
+              <div
+                id="slider2"
+                class="w-6 h-2 border-2 border-white rounded bg-orange-500"
+              ></div>
+              <div
+                id="slider3"
+                class="w-6 h-2 border-2 border-white rounded"
+              ></div>
+            </div>
+          </div>
+          <div id="speech" class="my-7 grid grid-cols-12 gap-1 md:h-64">
+            <div id="doubleCol" class="col-span-1">
+              <img src="../assets/icons/double-col.svg" alt="" />
+            </div>
+            <div
+              class="col-start-2 col-span-11 md:text-lg md:flex flex-col gap-2"
+            >
+              <p>
+                I love Dwelling! They make it super easy and safe to find a room
+                for rent. Customer service is vary quick and helpful. Highly
+                recommend this platform. Really a great and wonderful platform
+                to find rooms and houses in quick time.
+              </p>
+              <div id="profile" class="flex gap-2 items-center">
+                <div class="w-16 h-16 rounded-full">
+                  <img
+                    src="../assets/img/profilePic.svg"
+                    alt=""
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div>
+                  <p>Joe Root</p>
+                  <p>UI/UX designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="" />
+        <!-- <div
+          class="brand-names mt-12 md:mb-24 flex gap-5 justify-evenly items-center"
+        >
+          <img src="../assets/icons/nerdwallet.svg" class="h-[50%]" alt="" />
+          <img src="../assets/icons/indeed.svg" class="h-[50%]" alt="" />
+          <img src="../assets/icons/richwood.svg" class="h-[50%]" alt="" />
+          <img src="../assets/icons/netflix.svg" class="h-[50%]" alt="" />
+          <img src="../assets/icons/shin.svg" class="h-[50%]" alt="" />
+        </div> -->
+      </div>
+    </section>
+
+    <section id="ready">
+      <div class="mx-5 py-14 md:custom-container">
+        <div
+          id="ready-parent"
+          class="md:grid grid-cols-2 gap-6 justify-center items-center"
+        >
+          <div id="ready-img" class="flex gap-2 md:gap-8 mb-12">
+            <div>
+              <img
+                src="../assets/img/smallchair.svg"
+                alt=""
+                class="w-1/2 md:w-64"
+              />
+            </div>
+            <div>
+              <img
+                src="../assets/img/smallchair.svg"
+                alt=""
+                class="w-1/2 md:w-64"
+              />
+            </div>
+          </div>
+          <div id="ready-info" class="">
+            <h1 class="text-3xl font-bold mb-3">
+              Ready to find your dream home?
+            </h1>
+            <p class="text-2xl">
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents. Live the way you want. Beautiful
+              homes.
+            </p>
+            <div
+              id="readyBtn"
+              class="text-white font-bold my-10 flex flex-col md:flex-row w-fit gap-3"
+            >
+              <button class="py-4 px-9 bg-orange-500 rounded-md">
+                Find Home
+              </button>
+              <button class="py-4 px-9 bg-violet-500 rounded-md">
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer-parent" class="mx-5 md:custom-container">
+        <div id="footer-grid" class="md:flex justify-between">
+          <div id="footer-links" class="md:flex gap-24 order-last">
+            <div id="dwelling" class="flex flex-col gap-6">
+              <p class="font-bold text-xl">Dwelling</p>
+              <p>Find my home</p>
+              <p>Homeowners</p>
+              <p>Community</p>
+              <p>Reviews</p>
+            </div>
+            <div id="company" class="flex flex-col gap-6">
+              <p class="font-bold text-xl">Company</p>
+              <p>Features</p>
+              <p>Articles</p>
+              <p>Press</p>
+              <p>Refer</p>
+              <p>Careers</p>
+              <p>API documentations</p>
+            </div>
+            <div id="Support" class="flex flex-col gap-6">
+              <p class="font-bold text-xl">Support</p>
+              <p>Contact</p>
+              <p>Privacy</p>
+              <p>Terms</p>
+              <p>FAQ</p>
+            </div>
+          </div>
+
+          <div id="ending" class="max-w-[350px]">
+            <div class="logo mt-9 mb-5 flex gap-4 text-3xl font-medium">
+              <img src="../assets/img/logo.svg" alt="" class="h-8" />
+              <h1 class="md:text-xl">dwelling</h1>
+            </div>
+            <p class="text-xl">
+              Building a next-generation collaborative platform to connect
+              renters, homeowners, and agents.
+            </p>
+            <div id="email" class="mt-5 mb-7 flex gap-5">
+              <input
+                type="text"
+                placeholder="email"
+                class="p-4 bg-inherit border rounded"
+              />
+              <button class="py-4 px-9 bg-orange-500 rounded-md text-white">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5" />
+        <div id="links-parent" class="md:flex justify-between items-center">
+          <div id="media-links" class="flex gap-3 my-7">
+            <div
+              id="social-links"
+              class="h-9 w-9 rounded-full bg-orange-500 relative flex justify-center items-center"
+            >
+              <img src="../assets/icons/fb.svg" alt="" class="absolute" />
+            </div>
+            <div
+              id="social-links"
+              class="h-9 w-9 rounded-full bg-violet-500 relative flex justify-center items-center"
+            >
+              <img src="../assets/icons/in.svg" alt="" class="absolute" />
+            </div>
+            <div
+              id="social-links"
+              class="h-9 w-9 rounded-full bg-violet-500 relative flex justify-center items-center"
+            >
+              <img src="../assets/icons/twitter.svg" alt="" class="absolute" />
+            </div>
+          </div>
+          <p class="mb-3">Copyright @UIHUT 2022</p>
+        </div>
+      </div>
+    </footer>
     <script src="./app.js" defer></script>
   </body>
 </html>
