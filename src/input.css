@@ -1,10 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .custom-container {
-    margin-left: 135px;
-    margin-right: 135px;
+@keyframes slide {
+  from {
+    transform: translateX(100%);
   }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.brand-names {
+  display: inline-flex;
+  animation: slide 10s linear infinite;
+}
+
+.logoAnimation {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#arrows {
+  position: relative;
+  z-index: 10;
+}
+.slick-arrow {
+  display: none !important;
+}
+.price-active {
+  display: flex !important;
+}
+.slick-track {
+  height: 550px;
+}
+@media (min-width: 1024px) {
+  .slick-track {
+    padding-top: 90px;
+  }
+}
+.show {
+  margin-top: -90px;
 }

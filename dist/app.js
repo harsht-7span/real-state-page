@@ -1,16 +1,17 @@
 const hamBurgerMenu = document.getElementById("hamBurgerMenu");
-const registerButton = document.getElementById("register-btn");
+
+const menu = document.getElementById("menu");
 
 hamBurgerMenu.addEventListener("click", function () {
-  if (
-    menuList.classList.contains("hidden") &&
-    registerButton.classList.contains("hidden")
-  ) {
-    menuList.classList.remove("hidden");
-    // registerButton.classList.("hidden");
+  if (menuListMobile.classList.contains("!left-0")) {
+    menuListMobile.classList.remove("!left-0");
+    document.body.classList.remove("overflow-hidden");
   } else {
-    menuList.classList.add("hidden");
-    registerButton.classList.add("hidden");
+    menuListMobile.classList.add("!left-0");
+    document.body.classList.add("overflow-hidden");
   }
+  menu.addEventListener("click", function () {
+    menuListMobile.classList.remove("!left-0");
+    document.body.classList.remove("overflow-hidden");
+  });
 });
-
