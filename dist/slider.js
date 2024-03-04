@@ -3,6 +3,7 @@ $(document).ready(function () {
     infinite: true,
     speed: 1000,
     autoplay: false,
+    // autoplaySpeed: 1000,
     slidesToShow: 3,
     arrows: true,
     adaptiveHeight: true,
