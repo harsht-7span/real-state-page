@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Real State</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/sold.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./output.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="../slick-1.8.1/slick/slick.scss" />
@@ -21,14 +26,14 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
   </head>
-  <body class="bg-amber-50 font-Albert overflow-x-hidden">
+  <body class="overflow-x-hidden bg-amber-50 font-Albert">
     <div
       id="menuListMobile"
-      class="md:hidden container left-full fixed w-full h-screen transition-all duration-200 bg-white text-black text-3xl"
+      class="container fixed w-full h-screen text-3xl text-black transition-all duration-200 bg-white md:hidden left-full"
     >
       <ul
         id="menu"
-        class="flex flex-col gap-20 font-bold justify-center absolute md:relative h-full my-auto"
+        class="absolute flex flex-col justify-center h-full gap-20 my-auto font-bold md:relative"
       >
         <li><a href="#hero-section">Home</a></li>
         <li><a href="#Trusted">About us</a></li>
@@ -39,23 +44,23 @@
     </div>
 
     <section id="hero-section" class="h-fit">
-      <div class="main md:my-9 container">
+      <div class="container main md:my-9">
         <header class="py-3">
-          <nav class="flex justify-between items-center">
-            <div class="logo flex gap-4 text-3xl font-medium items-center">
+          <nav class="flex items-center justify-between">
+            <div class="flex items-center gap-4 text-3xl font-medium logo">
               <img src="./assets/img/logo.svg" alt="" class="h-8" />
               <h1 class="md:text-2xl">dwelling</h1>
             </div>
             <div
               id="hamBurgerMenu"
-              class="z-10 md:hidden flex flex-col gap-1 float-right justify-between items-center cursor-pointer"
+              class="z-10 flex flex-col items-center justify-between float-right gap-1 cursor-pointer md:hidden"
             >
-              <div class="hamBurger w-5 h-1 bg-black rounded-md"></div>
-              <div class="hamBurger w-5 h-1 bg-black rounded-md"></div>
-              <div class="hamBurger w-5 h-1 bg-black rounded-md"></div>
+              <div class="w-5 h-1 bg-black rounded-md hamBurger"></div>
+              <div class="w-5 h-1 bg-black rounded-md hamBurger"></div>
+              <div class="w-5 h-1 bg-black rounded-md hamBurger"></div>
             </div>
-            <div id="menuList" class="hidden md:flex flex-row items-center">
-              <ul class="md:flex gap-10 absolute md:relative">
+            <div id="menuList" class="flex-row items-center hidden md:flex">
+              <ul class="absolute gap-10 md:flex md:relative">
                 <li><a href="#hero-section">Home</a></li>
                 <li><a href="#Trusted">About us</a></li>
                 <li><a href="#give"> Renter</a></li>
@@ -63,9 +68,9 @@
                 <li><a href="#client">Reviews</a></li>
               </ul>
             </div>
-            <div id="register-btn" class="ml-4 md:inline hidden">
+            <div id="register-btn" class="hidden ml-4 md:inline">
               <button
-                class="bg-orange-600 text-white px-5 py-2 rounded-md shadow-lg hover:bg-violet-500 transition duration-300 ease-in-out"
+                class="px-5 py-2 text-white transition duration-300 ease-in-out bg-orange-600 rounded-md shadow-lg hover:bg-violet-500"
               >
                 Register
               </button>
@@ -76,11 +81,11 @@
         <div id="mainIntro">
           <div
             id="introImg"
-            class="flex gap-2 my-7 w-full items-center justify-between md:gap-8"
+            class="flex items-center justify-between w-full gap-2 my-7 md:gap-8"
           >
             <div
               id="landingImg"
-              class="bg-none rounded-md w-80 overflow-hidden"
+              class="overflow-hidden rounded-md bg-none w-80"
             >
               <img
                 src="./assets/img/property.svg"
@@ -91,17 +96,17 @@
 
             <div
               id="landingImg"
-              class="bg-none rounded-md w-80 overflow-hidden"
+              class="overflow-hidden rounded-md bg-none w-80"
             >
               <img
                 src="./assets/img/property.svg"
                 alt=""
-                class="pt-8 object-cover w-full"
+                class="object-cover w-full pt-8"
               />
             </div>
             <div
               id="landingImg"
-              class="bg-none rounded-md w-80 overflow-hidden"
+              class="overflow-hidden rounded-md bg-none w-80"
             >
               <img
                 src="./assets/img/smallchair.svg"
@@ -111,17 +116,17 @@
             </div>
             <div
               id="landingImg"
-              class="bg-none rounded-md w-80 overflow-hidden"
+              class="overflow-hidden rounded-md bg-none w-80"
             >
               <img
                 src="./assets/img/property.svg"
                 alt=""
-                class="pt-8 object-cover w-full"
+                class="object-cover w-full pt-8"
               />
             </div>
           </div>
-          <div class="heading max-w-6xl">
-            <h1 class="md:text-h1 text-4xl font-bold my-2 md:py-8">
+          <div class="max-w-6xl heading">
+            <h1 class="my-2 text-4xl font-bold md:text-h1 md:py-8">
               Home is where your story begins
             </h1>
             <p class="text-zinc-500">
@@ -131,15 +136,15 @@
             </p>
             <div
               id="searchScroll"
-              class="md:flex items-center justify-between my-2"
+              class="items-center justify-between my-2 md:flex"
             >
               <div
                 id="searchBox"
-                class="bg-white p-7 md:flex gap-2 justify-center items-center rounded-md"
+                class="items-center justify-center gap-2 bg-white rounded-md p-7 md:flex"
               >
                 <div
                   id="s1"
-                  class="my-3 border-2 border-gray-300 flex rounded-md px-3 w-64"
+                  class="flex w-64 px-3 my-3 border-2 border-gray-300 rounded-md"
                 >
                   <input
                     type="text"
@@ -150,12 +155,12 @@
                 </div>
                 <div
                   id="s2"
-                  class="my-3 border-2 border-gray-300 flex justify-between rounded-md px-3 w-56"
+                  class="flex justify-between w-56 px-3 my-3 border-2 border-gray-300 rounded-md"
                 >
                   <select
                     id="where"
                     style="-webkit-appearance: none"
-                    class="h-12 outline-none text-zinc-500 w-full"
+                    class="w-full h-12 outline-none text-zinc-500"
                   >
                     <option value="" selected disabled hidden>
                       What type of Home?
@@ -167,7 +172,7 @@
                   <img src="./assets/icons/down-arrow.svg" alt="" />
                 </div>
                 <button
-                  class="my-3 bg-orange-600 flex gap-3 justify-between items-center px-4 font-semibold rounded-md text-white h-12 hover:bg-violet-500 transition duration-300 ease-in-out"
+                  class="flex items-center justify-between h-12 gap-3 px-4 my-3 font-semibold text-white transition duration-300 ease-in-out bg-orange-600 rounded-md hover:bg-violet-500"
                 >
                   Find a home
                   <img src="./assets/icons/left-arrow.svg" alt="" />
@@ -190,11 +195,11 @@
     <section id="Trusted" class="bg-violet-600">
       <div
         id="info-parent"
-        class="md:py-20 py-14 text-gray-200 flex flex-col gap-10 container"
+        class="container flex flex-col gap-10 text-gray-200 md:py-20 py-14"
       >
-        <div id="text-parent" class="md:grid md:grid-cols-2 gap-4 items-center">
+        <div id="text-parent" class="items-center gap-4 md:grid md:grid-cols-2">
           <div id="trusted">
-            <h1 class="text-2xl md:text-7xl font-bold text-white">
+            <h1 class="text-2xl font-bold text-white md:text-7xl">
               Trusted by the people across the globe
             </h1>
           </div>
@@ -215,26 +220,26 @@
             id="emoji"
             class="flex flex-col gap-7 md:flex-row md:justify-around"
           >
-            <div id="shocked" class="flex gap-5 items-start">
+            <div id="shocked" class="flex items-start gap-5">
               <div>
                 <img src="./assets/icons/shocked.svg" alt="" />
               </div>
               <div id="shockedInfo">
-                <h1 class="font-bold text-4xl leading-none">+20K</h1>
+                <h1 class="text-4xl font-bold leading-none">+20K</h1>
                 <p>Clients worldwide</p>
               </div>
             </div>
-            <div id="loved" class="flex gap-5 items-start">
+            <div id="loved" class="flex items-start gap-5">
               <img src="./assets/icons/loved.svg" alt="" />
               <div id="lovedInfo">
-                <h1 class="font-bold text-4xl leading-none">95.7%</h1>
+                <h1 class="text-4xl font-bold leading-none">95.7%</h1>
                 <p>Satisfied Clients</p>
               </div>
             </div>
-            <div id="happy" class="flex gap-5 items-start">
+            <div id="happy" class="flex items-start gap-5">
               <img src="./assets/icons/happy.svg" alt="" />
               <div id="happyInfo">
-                <h1 class="font-bold text-4xl leading-none">100+</h1>
+                <h1 class="text-4xl font-bold leading-none">100+</h1>
                 <p>City around</p>
               </div>
             </div>
@@ -245,28 +250,28 @@
     </section>
 
     <section id="solution" class="bg-white">
-      <div id="solution-parent" class="py-20 container">
-        <div id="solutionInfo" class="grid md:grid-cols-2 gap-10 sm:gap-32">
+      <div id="solution-parent" class="container py-20">
+        <div id="solutionInfo" class="grid gap-10 md:grid-cols-2 sm:gap-32">
           <div id="imgCard" class="relative">
             <img src="./assets/img/chairHome.svg" alt="" class="w-9/12" />
             <div
               id="profileCard"
-              class="bg-white h-fit w-1/2 md:w-52 md:h-60 absolute right-0 bottom-4 rounded-md shadow grid justify-center p-4"
+              class="absolute right-0 grid justify-center w-1/2 p-4 bg-white rounded-md shadow h-fit md:w-52 md:h-60 bottom-4"
             >
               <div id="imgCircle" class="relative grid justify-center pb-4">
                 <img src="./assets/img/profilePic.svg" alt="" class="h-full" />
                 <span
                   id="greenDot"
-                  class="absolute p-2 right-10 bottom-3 md:p-3 md:bottom-5 md:right-5 bg-green-700 rounded-full border"
+                  class="absolute p-2 bg-green-700 border rounded-full right-10 bottom-3 md:p-3 md:bottom-5 md:right-5"
                 >
                 </span>
               </div>
-              <div class="flex flex-col justify-center items-center">
-                <h1 class="font-bold text-xl">David Warner</h1>
+              <div class="flex flex-col items-center justify-center">
+                <h1 class="text-xl font-bold">David Warner</h1>
                 <p class="text-zinc-500">Property Agent</p>
                 <button
                   id="msgBtn"
-                  class="bg-violet-600 rounded-md text-white px-5 py-2 my-3 hover:bg-orange-500 transition duration-300 ease-in-out"
+                  class="px-5 py-2 my-3 text-white transition duration-300 ease-in-out rounded-md bg-violet-600 hover:bg-orange-500"
                 >
                   Messages
                 </button>
@@ -274,7 +279,7 @@
             </div>
           </div>
           <div id="solutionText" class="grid gap-10 md:gap-7">
-            <h1 class="text-3xl md:text-5xl font-bold">
+            <h1 class="text-3xl font-bold md:text-5xl">
               Providing the effective solutions for you
             </h1>
             <p class="md:text-xl">
@@ -283,7 +288,7 @@
               homes. Incredible locations. Pricing that makes sense.
             </p>
             <button
-              class="bg-orange-600 p-5 rounded-md text-white font-bold w-max md:h-fit hover:bg-violet-500 transition duration-300 ease-in-out"
+              class="p-5 font-bold text-white transition duration-300 ease-in-out bg-orange-600 rounded-md w-max md:h-fit hover:bg-violet-500"
             >
               More About Us
             </button>
@@ -294,14 +299,14 @@
 
     <section
       id="porperty"
-      class="bg-gradient-to-b from-violet-600 from-70% to-white to-30%"
+      class="bg-gradient-to-b from-violet-600 from-70% to-white to-30% py-12"
     >
       <div class="container">
-        <div id="property" class="pt-12 text-white">
-          <div class="md:grid grid-cols-3 justify-between items-end">
+        <div id="property" class="text-white">
+          <div class="items-end justify-between grid-cols-3 md:grid">
             <div></div>
             <div id="property-intro" class="my-7">
-              <h1 class="text-3xl font-bold my-5">Popular property</h1>
+              <h1 class="my-5 text-3xl font-bold">Popular property</h1>
               <p>
                 Building a next-generation collaborative platform to connect
                 renters, homeowners, and agents.
@@ -310,7 +315,7 @@
             <div id="arrows" class="flex gap-7">
               <div
                 id="arrow-1"
-                class="h-12 w-12 bg-white rounded-full relative -rotate-45 flex justify-center"
+                class="relative flex justify-center w-12 h-12 -rotate-45 bg-white rounded-full"
               >
                 <img
                   src="./assets/icons/up-arrow-svgrepo-com.svg"
@@ -321,7 +326,7 @@
 
               <div
                 id="arrow-2"
-                class="h-12 w-12 bg-orange-500 rounded-full relative rotate-45 flex justify-center"
+                class="relative flex justify-center w-12 h-12 rotate-45 bg-orange-500 rounded-full"
               >
                 <img
                   src="./assets/icons/up-arrow-svgrepo-com.svg"
@@ -338,26 +343,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -366,26 +371,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -394,26 +399,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -422,26 +427,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -450,26 +455,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -478,26 +483,26 @@
                 <img
                   src="./assets/img/property.svg"
                   alt=""
-                  class="h-full w-full md:w-auto md:h-auto"
+                  class="w-full h-full md:w-auto md:h-auto"
                 />
                 <div
                   id="price"
-                  class="price mt-7 justify-between flex lg:hidden"
+                  class="flex justify-between price mt-7 lg:hidden"
                 >
                   <div id="price-text">
-                    <p class="text-black font-bold">
+                    <p class="font-bold text-black">
                       <span class="text-orange-500">$ </span>49,143
                     </p>
-                    <p class="text-black font-bold">Gulshan duplex house</p>
+                    <p class="font-bold text-black">Gulshan duplex house</p>
                   </div>
                   <div
                     id="arrow-3"
-                    class="h-12 w-12 bg-violet-600 rounded-full relative rotate-45 flex justify-center"
+                    class="relative flex justify-center w-12 h-12 rotate-45 rounded-full bg-violet-600"
                   >
                     <img
                       src="./assets/icons/up-arrow-svgrepo-com.svg"
                       alt=""
-                      class="w-6 flex-none"
+                      class="flex-none w-6"
                     />
                   </div>
                 </div>
@@ -507,7 +512,7 @@
 
           <div>
             <button
-              class="bg-orange-500 py-4 px-9 rounded-md hidden md:inline-block hover:bg-violet-500 transition duration-300 ease-in-out"
+              class="hidden py-4 text-center transition duration-300 ease-in-out bg-orange-500 rounded-md px-9 md:inline-block hover:bg-violet-500"
             >
               All Property
             </button>
@@ -519,20 +524,20 @@
     <section id="give">
       <div
         id="give-parent"
-        class="flex flex-col gap-7 justify-center items-center container py-24"
+        class="container flex flex-col items-center justify-center py-24 gap-7"
       >
-        <h1 class="text-3xl md:text-5xl font-bold">What we give you</h1>
-        <p class="text-center text-lg">
+        <h1 class="text-3xl font-bold md:text-5xl">What we give you</h1>
+        <p class="text-lg text-center">
           Building a next-generation collaborative platform to connect renters,
           homeowners, and agents.
         </p>
         <div
           id="video"
-          class="w-auto h-48 md:w-full md:h-full bg-gray-500 flex justify-center items-center rounded"
+          class="flex items-center justify-center w-auto h-48 bg-gray-500 rounded md:w-full md:h-full"
         >
           <video
             src="#"
-            class="h-full w-full rounded object-cover"
+            class="object-cover w-full h-full rounded"
             controls
           ></video>
         </div>
@@ -540,36 +545,38 @@
     </section>
 
     <section id="client" class="bg-zinc-900">
-      <div id="client-parent" class="py-14 container">
-        <div id="client" class="md:grid grid-cols-2 justify-center text-white">
+      <div id="client-parent" class="container py-14">
+        <div
+          id="client"
+          class="grid justify-center gap-6 text-white md:grid-cols-2 py-14"
+        >
           <div id="client-h1" class="flex flex-col gap-7">
-            <h1 class="text-3xl md:text-6xl font-bold">What client Say</h1>
+            <h1 class="text-3xl font-bold md:text-6xl">What client Say</h1>
             <div id="slider" class="flex gap-3">
               <div
                 id="slider1"
                 class="w-6 h-2 border-2 border-white rounded-md"
               ></div>
-              <div id="slider2" class="w-6 h-2 rounded-md bg-orange-500"></div>
+              <div id="slider2" class="w-6 h-2 bg-orange-500 rounded-md"></div>
               <div
                 id="slider3"
                 class="w-6 h-2 border-2 border-white rounded-md"
               ></div>
             </div>
           </div>
-          <div id="speech" class="my-7 grid grid-cols-12">
-            <div id="doubleCol" class="col-span-12">
+
+          <div id="speech" class="relative pt-5 pl-10">
+            <div id="doubleCol" class="absolute top-0 left-0">
               <img src="./assets/icons/double-col.svg" alt="" />
             </div>
-            <div
-              class="col-start-2 col-span-11 md:text-lg md:flex flex-col gap-2"
-            >
+            <div class="gap-2 md:text-lg">
               <p>
                 I love Dwelling! They make it super easy and safe to find a room
                 for rent. Customer service is vary quick and helpful. Highly
                 recommend this platform. Really a great and wonderful platform
                 to find rooms and houses in quick time.
               </p>
-              <div id="profile" class="flex gap-2 items-center">
+              <div id="profile" class="flex items-center gap-2 pt-7">
                 <div class="w-16 h-16 rounded-md-full">
                   <img
                     src="./assets/img/profilePic.svg"
@@ -588,7 +595,7 @@
         <hr class="" />
         <div class="logoAnimation">
           <div
-            class="brand-names mt-12 md:mb-24 flex gap-10 justify-evenly items-center"
+            class="flex items-center gap-10 mt-12 brand-names md:mb-24 justify-evenly"
           >
             <img
               src="./assets/icons/nerdwallet.svg"
@@ -621,12 +628,12 @@
     </section>
 
     <section id="ready">
-      <div class="py-14 container">
+      <div class="container py-14">
         <div
           id="ready-parent"
-          class="md:grid grid-cols-2 gap-32 justify-center items-center"
+          class="items-center justify-center grid-cols-2 gap-32 md:grid"
         >
-          <div id="ready-img" class="flex gap-4 md:gap-8 mb-12">
+          <div id="ready-img" class="flex gap-4 mb-12 md:gap-8">
             <div>
               <img src="./assets/img/plants.svg" alt="" class="" />
             </div>
@@ -635,7 +642,7 @@
             </div>
           </div>
           <div id="ready-info" class="">
-            <h1 class="text-3xl font-bold mb-3">
+            <h1 class="mb-3 text-3xl font-bold">
               Ready to find your dream home?
             </h1>
             <p class="text-2xl text-zinc-500">
@@ -645,15 +652,15 @@
             </p>
             <div
               id="readyBtn"
-              class="text-white font-bold my-10 flex flex-col md:flex-row w-fit gap-3"
+              class="flex flex-col gap-3 my-10 font-bold text-white md:flex-row w-fit"
             >
               <button
-                class="py-4 px-9 bg-orange-500 rounded-md hover:bg-violet-500 transition duration-300 ease-in-out"
+                class="py-4 transition duration-300 ease-in-out bg-orange-500 rounded-md px-9 hover:bg-violet-500"
               >
                 Find Home
               </button>
               <button
-                class="py-4 px-9 bg-violet-500 rounded-md hover:bg-orange-500 transition duration-300 ease-in-out"
+                class="py-4 transition duration-300 ease-in-out rounded-md px-9 bg-violet-500 hover:bg-orange-500"
               >
                 Contact us
               </button>
@@ -666,17 +673,17 @@
 
     <footer>
       <div id="footer-parent" class="container">
-        <div id="footer-grid" class="md:flex justify-between">
-          <div id="footer-links" class="md:flex gap-24 order-last">
+        <div id="footer-grid" class="justify-between md:flex">
+          <div id="footer-links" class="order-last gap-24 md:flex">
             <div id="dwelling" class="flex flex-col gap-6 pb-4 text-zinc-500">
-              <p class="font-bold text-xl text-black">Dwelling</p>
+              <p class="text-xl font-bold text-black">Dwelling</p>
               <p>Find my home</p>
               <p>Homeowners</p>
               <p>Community</p>
               <p>Reviews</p>
             </div>
             <div id="company" class="flex flex-col gap-6 pb-4 text-zinc-500">
-              <p class="font-bold text-xl text-black">Company</p>
+              <p class="text-xl font-bold text-black">Company</p>
               <p>Features</p>
               <p>Articles</p>
               <p>Press</p>
@@ -685,7 +692,7 @@
               <p>API documentations</p>
             </div>
             <div id="Support" class="flex flex-col gap-6 pb-4 text-zinc-500">
-              <p class="font-bold text-xl text-black">Support</p>
+              <p class="text-xl font-bold text-black">Support</p>
               <p>Contact</p>
               <p>Privacy</p>
               <p>Terms</p>
@@ -694,11 +701,11 @@
           </div>
 
           <div id="ending" class="max-w-[360px]">
-            <div class="logo mt-9 mb-5 flex gap-4 font-medium">
+            <div class="flex gap-4 mb-5 font-medium logo mt-9">
               <img src="./assets/img/logo.svg" alt="" class="h-8" />
               <h1 class="text-2xl">dwelling</h1>
             </div>
-            <p class="text-lg py-5 text-zinc-500">
+            <p class="py-5 text-lg text-zinc-500">
               Building a next-generation collaborative platform to connect
               renters, homeowners, and agents.
             </p>
@@ -706,10 +713,10 @@
               <input
                 type="text"
                 placeholder="email"
-                class="p-4 bg-inherit border rounded-md appearance-none"
+                class="p-4 border rounded-md appearance-none bg-inherit"
               />
               <button
-                class="px-4 w-full bg-orange-500 rounded-md text-white hover:bg-violet-500 transition duration-300 ease-in-out"
+                class="w-full px-4 text-white transition duration-300 ease-in-out bg-orange-500 rounded-md hover:bg-violet-500"
               >
                 Send
               </button>
@@ -717,23 +724,23 @@
           </div>
         </div>
         <hr class="mt-5" />
-        <div id="links-parent" class="md:flex justify-between items-center">
+        <div id="links-parent" class="items-center justify-between md:flex">
           <div id="media-links" class="flex gap-3 my-7">
             <div
               id="social-links"
-              class="h-9 w-9 rounded-full bg-orange-500 relative flex justify-center items-center"
+              class="relative flex items-center justify-center bg-orange-500 rounded-full h-9 w-9"
             >
               <img src="./assets/icons/fb.svg" alt="" class="absolute" />
             </div>
             <div
               id="social-links"
-              class="h-9 w-9 rounded-full bg-violet-500 relative flex justify-center items-center"
+              class="relative flex items-center justify-center rounded-full h-9 w-9 bg-violet-500"
             >
               <img src="./assets/icons/in.svg" alt="" class="absolute" />
             </div>
             <div
               id="social-links"
-              class="h-9 w-9 rounded-full bg-violet-500 relative flex justify-center items-center"
+              class="relative flex items-center justify-center rounded-full h-9 w-9 bg-violet-500"
             >
               <img src="./assets/icons/twitter.svg" alt="" class="absolute" />
             </div>
