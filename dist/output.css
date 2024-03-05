@@ -706,6 +706,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -879,6 +883,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1105,6 +1113,11 @@ video {
   padding-right: 2.25rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -1140,11 +1153,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1153,8 +1161,12 @@ video {
   padding-left: 2.5rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pt-7{
+  padding-top: 1.75rem;
 }
 
 .pt-8{
@@ -1165,24 +1177,16 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
+.pl-9{
+  padding-left: 2.25rem;
 }
 
-.pl-12{
-  padding-left: 3rem;
+.pt-9{
+  padding-top: 2.25rem;
 }
 
-.pl-11{
-  padding-left: 2.75rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pt-7{
-  padding-top: 1.75rem;
+.pl-8{
+  padding-left: 2rem;
 }
 
 .text-center{
@@ -1387,6 +1391,10 @@ video {
     margin-bottom: 6rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:inline-block{
     display: inline-block;
   }
@@ -1438,6 +1446,10 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
