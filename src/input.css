@@ -3,14 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.show {
+  margin-top: -90px;
 }
+
 .brand-names {
   display: inline-flex;
   animation: slide 10s linear infinite;
@@ -34,11 +30,17 @@
 .slick-track {
   height: 550px;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 @media (min-width: 1024px) {
   .slick-track {
     padding-top: 90px;
   }
-}
-.show {
-  margin-top: -90px;
 }

@@ -26,10 +26,10 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
   </head>
-  <body class="overflow-x-hidden bg-amber-50 font-Albert">
+  <body class="overflow-x-hidden font-Albert">
     <div
       id="menuListMobile"
-      class="container fixed w-full h-screen text-3xl text-black transition-all duration-200 bg-white md:hidden left-full"
+      class="fixed w-full h-screen px-10 text-3xl text-black transition-all duration-200 bg-white md:hidden left-full"
     >
       <ul
         id="menu"
@@ -43,13 +43,13 @@
       </ul>
     </div>
 
-    <section id="hero-section" class="h-fit">
-      <div class="container main md:my-9">
+    <section id="hero-section" class="h-fit md:py-9 bg-amber-50">
+      <div class="container main">
         <header class="py-3">
           <nav class="flex items-center justify-between">
             <div class="flex items-center gap-4 text-3xl font-medium logo">
-              <img src="./assets/img/logo.svg" alt="" class="h-8" />
-              <h1 class="md:text-2xl">dwelling</h1>
+              <img src="./assets/icons/Logo.svg" alt="" class="h-8" />
+              <!-- <h3 class="md:text-2xl">dwelling</h3> -->
             </div>
             <div
               id="hamBurgerMenu"
@@ -81,7 +81,7 @@
         <div id="mainIntro">
           <div
             id="introImg"
-            class="flex items-center justify-between w-full gap-2 my-7 md:gap-8"
+            class="flex items-center justify-between w-full gap-2 py-7 sm:pt-20 sm:pb-14 md:gap-8"
           >
             <div
               id="landingImg"
@@ -125,11 +125,12 @@
               />
             </div>
           </div>
-          <div class="max-w-6xl heading">
-            <h1 class="my-2 text-4xl font-bold md:text-h1 md:py-8">
+
+          <div class="max-w-6xl text-lg heading">
+            <h1 class="pt-2 text-4xl font-bold md:text-h1 md:py-8">
               Home is where your story begins
             </h1>
-            <p class="text-zinc-500">
+            <p class="pt-8 pb-12 text-zinc-500">
               Building a next-generation collaborative platform to connect
               renters, homeowners, and agents. Live the way you want. Beautiful
               homes. Incredible locations. Pricing that makes sense.
@@ -144,7 +145,7 @@
               >
                 <div
                   id="s1"
-                  class="flex w-64 px-3 my-3 border-2 border-gray-300 rounded-md"
+                  class="flex justify-between w-64 px-3 my-3 border-2 border-gray-300 rounded-md"
                 >
                   <input
                     type="text"
@@ -178,7 +179,10 @@
                   <img src="./assets/icons/left-arrow.svg" alt="" />
                 </button>
               </div>
-              <div id="mouse" class="flex flex-col items-center justify-center">
+              <div
+                id="mouse"
+                class="flex flex-col items-start justify-center md:items-center py-14"
+              >
                 <div>
                   <img src="./assets/icons/mouse.svg" alt="" class="" />
                 </div>
@@ -195,13 +199,13 @@
     <section id="Trusted" class="bg-violet-600">
       <div
         id="info-parent"
-        class="container flex flex-col gap-10 text-gray-200 md:py-20 py-14"
+        class="container space-y-16 text-sm text-gray-200 sm:text-lg md:py-20 py-14"
       >
         <div id="text-parent" class="items-center gap-4 md:grid md:grid-cols-2">
           <div id="trusted">
-            <h1 class="text-2xl font-bold text-white md:text-7xl">
+            <h2 class="text-2xl font-bold text-white md:text-7xl">
               Trusted by the people across the globe
-            </h1>
+            </h2>
           </div>
           <div id="trusted-text">
             <p class="py-5">
@@ -225,21 +229,21 @@
                 <img src="./assets/icons/shocked.svg" alt="" />
               </div>
               <div id="shockedInfo">
-                <h1 class="text-4xl font-bold leading-none">+20K</h1>
+                <h3 class="text-4xl font-bold leading-none">+20K</h3>
                 <p>Clients worldwide</p>
               </div>
             </div>
             <div id="loved" class="flex items-start gap-5">
               <img src="./assets/icons/loved.svg" alt="" />
               <div id="lovedInfo">
-                <h1 class="text-4xl font-bold leading-none">95.7%</h1>
+                <h3 class="text-4xl font-bold leading-none">95.7%</h3>
                 <p>Satisfied Clients</p>
               </div>
             </div>
             <div id="happy" class="flex items-start gap-5">
               <img src="./assets/icons/happy.svg" alt="" />
               <div id="happyInfo">
-                <h1 class="text-4xl font-bold leading-none">100+</h1>
+                <h3 class="text-4xl font-bold leading-none">100+</h3>
                 <p>City around</p>
               </div>
             </div>
@@ -267,7 +271,7 @@
                 </span>
               </div>
               <div class="flex flex-col items-center justify-center">
-                <h1 class="text-xl font-bold">David Warner</h1>
+                <h3 class="text-xl font-bold">David Warner</h3>
                 <p class="text-zinc-500">Property Agent</p>
                 <button
                   id="msgBtn"
@@ -279,16 +283,16 @@
             </div>
           </div>
           <div id="solutionText" class="grid gap-10 md:gap-7">
-            <h1 class="text-3xl font-bold md:text-5xl">
+            <h2 class="text-3xl font-bold md:text-5xl">
               Providing the effective solutions for you
-            </h1>
+            </h2>
             <p class="md:text-xl">
               Building a next-generation collaborative platform to connect
               renters, homeowners, and agents. Live the way you want. Beautiful
               homes. Incredible locations. Pricing that makes sense.
             </p>
             <button
-              class="p-5 font-bold text-white transition duration-300 ease-in-out bg-orange-600 rounded-md w-max md:h-fit hover:bg-violet-500"
+              class="py-4 font-bold text-white transition duration-300 ease-in-out bg-orange-600 rounded-md px-9 w-max md:h-fit hover:bg-violet-500"
             >
               More About Us
             </button>
@@ -305,9 +309,9 @@
         <div id="property" class="text-white">
           <div class="items-end justify-end grid-cols-3 md:grid">
             <div></div>
-            <div id="property-intro" class="my-7">
-              <h1 class="my-5 text-3xl font-bold">Popular property</h1>
-              <p>
+            <div id="property-intro" class="text-lg my-7">
+              <h2 class="my-5 text-5xl font-bold">Popular property</h2>
+              <p class="text-sm sm:text-lg">
                 Building a next-generation collaborative platform to connect
                 renters, homeowners, and agents.
               </p>
@@ -317,22 +321,14 @@
                 id="arrow-1"
                 class="relative flex justify-center w-12 h-12 -rotate-45 bg-white rounded-full"
               >
-                <img
-                  src="./assets/icons/up-arrow-svgrepo-com.svg"
-                  alt=""
-                  class="w-6"
-                />
+                <img src="./assets/icons/arrow-purple.svg" alt="" class="w-6" />
               </div>
 
               <div
                 id="arrow-2"
                 class="relative flex justify-center w-12 h-12 rotate-45 bg-orange-500 rounded-full"
               >
-                <img
-                  src="./assets/icons/up-arrow-svgrepo-com.svg"
-                  alt=""
-                  class="w-6"
-                />
+                <img src="./assets/icons/arrow-white.svg" alt="" class="w-6" />
               </div>
             </div>
           </div>
@@ -512,7 +508,7 @@
 
           <div class="block text-center">
             <button
-              class="hidden py-4 transition duration-300 ease-in-out bg-orange-500 rounded-md px-9 md:inline-block hover:bg-violet-500"
+              class="hidden py-4 text-lg transition duration-300 ease-in-out bg-orange-500 rounded-md px-9 md:inline-block hover:bg-violet-500"
             >
               All Property
             </button>
@@ -526,7 +522,7 @@
         id="give-parent"
         class="container flex flex-col items-center justify-center py-24 gap-7"
       >
-        <h1 class="text-3xl font-bold md:text-5xl">What we give you</h1>
+        <h2 class="text-3xl font-bold md:text-5xl">What we give you</h2>
         <p class="text-lg text-center">
           Building a next-generation collaborative platform to connect renters,
           homeowners, and agents.
@@ -551,7 +547,7 @@
           class="grid justify-center gap-6 text-white md:grid-cols-2 py-14"
         >
           <div id="client-h1" class="flex flex-col gap-7">
-            <h1 class="text-3xl font-bold md:text-6xl">What client Say</h1>
+            <h2 class="text-3xl font-bold md:text-6xl">What client Say</h2>
             <div id="slider" class="flex gap-3">
               <div
                 id="slider1"
@@ -642,10 +638,10 @@
             </div>
           </div>
           <div id="ready-info" class="">
-            <h1 class="mb-3 text-3xl font-bold">
+            <h2 class="mb-3 text-3xl font-bold">
               Ready to find your dream home?
-            </h1>
-            <p class="text-2xl text-zinc-500">
+            </h2>
+            <p class="text-sm sm:text-2xl text-zinc-500">
               Building a next-generation collaborative platform to connect
               renters, homeowners, and agents. Live the way you want. Beautiful
               homes.
@@ -701,11 +697,11 @@
           </div>
 
           <div id="ending" class="max-w-[360px]">
-            <div class="flex gap-4 mb-5 font-medium logo mt-9">
-              <img src="./assets/img/logo.svg" alt="" class="h-8" />
-              <h1 class="text-2xl">dwelling</h1>
-            </div>
-            <p class="py-5 text-lg text-zinc-500">
+            <!-- <div class="flex gap-4 font-medium logo"> -->
+            <img src="./assets/icons/footer-Logo.svg" alt="" class="h-8" />
+            <!-- <h3 class="text-2xl">dwelling</h3> -->
+            <!-- </div> -->
+            <p class="py-5 text-sm sm:text-lg text-zinc-500">
               Building a next-generation collaborative platform to connect
               renters, homeowners, and agents.
             </p>
